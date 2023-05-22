@@ -1,12 +1,13 @@
 import random
 
-letras = "abcdefghijklmnopqrstuvwxyz"
-numeros = "0123456789"
-simbolos = "!@#$%^&*()_+-="
+letter = "abcdefghijklmnopqrstuvwxyz"
+number = "0123456789"
+symbols = "!@#$%^&*()_+-="
 
-todo_junto = letras + numeros + simbolos
+all_together = letter + number + symbols
 
 # Genera una contraseña de una cierta cantidad de caracteres de largo.
-largo = int(input("Ingrese la cantidad de caracteres de la contraseña: "))
-password = "".join(random.sample(todo_junto, largo))
+long = int(input("Ingrese la cantidad de caracteres de la contraseña: "))
+password = "".join(random.sample(all_together, long))
 print(f"Password generado: {password}")
+
