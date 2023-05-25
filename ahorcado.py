@@ -94,7 +94,7 @@ def jugar_otra_vez():
 
 def salir_juego():
     print()
-    print("Presione (Ctrl+c) para salir del juego.")
+    print('Presione (Ctrl+c) para salir del juego.')
 
 
 if __name__ == '__main__':
