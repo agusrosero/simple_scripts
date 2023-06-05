@@ -1,5 +1,6 @@
 from nltk.chat.util import Chat, reflections
 
+# Utilizando expresiones regulares.
 # Formato:
 # [     
 #         r"mi nombre es (.*)",
