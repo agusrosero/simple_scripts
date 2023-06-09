@@ -2,11 +2,11 @@ import re
 
 email = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
 
-def validacion(correo):
-    if re.match(email, correo):
+def validation(mail):
+    if re.match(email, mail):
         print("El correo es valido.")
     else:
         print("El correo es invalido.")
      
 
-validacion("test@mail.com")
+validation("test@mail.com")
