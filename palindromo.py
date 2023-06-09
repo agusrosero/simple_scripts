@@ -1,17 +1,17 @@
-palabra = str(input("Ingrese una palabra: "))
+word = str(input("Ingrese una palabra: "))
 
-es_palindromo = True
-inico = 0
-fin = len(palabra) - 1
+is_palindrome = True
+start = 0
+end = len(word) - 1
 
-while inico < fin:
-    if palabra[inico] != palabra[fin]:
-        es_palindromo = False
+while start < end:
+    if word[start] != word[end]:
+        is_palindrome = False
         break
-    inico += 1
-    fin -= 1
+    start += 1
+    end -= 1
 
-if es_palindromo:
-    print(f"{palabra} es un palindromo")
+if is_palindrome:
+    print(f"{word} es un palindromo")
 else:
-    print(f"{palabra} no es un palindromo")
+    print(f"{word} no es un palindromo")
