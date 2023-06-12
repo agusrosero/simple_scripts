@@ -1,5 +1,3 @@
-# Create interface.
-
 morse_code = {
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
     'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.',
@@ -10,6 +8,11 @@ morse_code = {
     ':': '---...', ';': '-.-.-.', '=': '-...-', '+': '.-.-.', '-': '-....-', '_': '..--.-', '"': '.-..-.',
     '$': '...-..-', '@': '.--.-.', ' ': '/'
 }
+
+def interface():
+    print("1. Traducir texto a morse.")
+    print("2. Traducir codigo morse a texto.")
+    print("3. Salir.")
 
 def text_to_morse(text):
     morse = ""
@@ -29,14 +32,15 @@ def morse_to_text(morse):
 
 def main():
     while True:
-        choice = input("")
+        interface()
+        choice = input("Ingrese una opcion: ")
 
         if choice == "1":
             text = input("Ingresa el texto a traducir: ")
             morse = text_to_morse(text)
             print("Texto en codigo morese: ", morse)
         elif choice == "2":
-            morse = input("Ingrese el codigo morse a traducit: ")
+            morse = input("Ingrese el codigo morse a traducir: ")
             text = morse_to_text(morse)
             print("Codigo morse traducido: ", text)
         elif choice == "3":
