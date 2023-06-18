@@ -6,7 +6,7 @@ def validation(mail):
     if re.match(email, mail):
         print("El correo es valido.")
     else:
-        print("El correo es invalido.")
+        print("El correo no es invalido.")
      
 
 validation("test@mail.com")
